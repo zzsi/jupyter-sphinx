@@ -33,6 +33,7 @@ if traitlets.version_info < (5, 1):
                 return object.__getattribute__(self, attr)
             return self._wrapped.__getattribute__(attr)
 
+
 else:
 
     def LoggerAdapterWrapper(logger_adapter):
@@ -328,4 +329,4 @@ def write_notebook_output(notebook, output_dir, notebook_name, location=None):
 
 def contains_widgets(notebook):
     widgets = get_widgets(notebook)
-    return widgets and widgets["state"]
+    return widgets and widgets.get("state")

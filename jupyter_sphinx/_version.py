@@ -1,4 +1,6 @@
-version_info = (0, 4, 0, "final")
+# version_info = (0, 4, 0, "final")
+# This is a temporary work around for the strict requirement of jupyter-book's (~0.13) dependencies.
+version_info = (0, 3, 2, "final")
 
 _specifier_ = {"alpha": "a", "beta": "b", "candidate": "rc", "final": ""}
 
